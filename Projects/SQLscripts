@@ -1,0 +1,9 @@
+SELECT * FROM flights.flights;
+#Find the the unique source name and distinct name of cities 
+SELECT distinct(Source) FROM flights.flights UNION 
+SELECT distinct(Destination) FROM flights.flights;
+
+-- Query for Source and destination 
+SELECT * FROM flights.flights WHERE Source='Banglore' AND Destination='New Delhi';
+-- Total no of rows 
+SELECT count(*) FROM flights.flights;
